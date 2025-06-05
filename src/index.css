@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Document content styling */
+.docx-content {
+  @apply text-gray-800 text-sm;
+}
+
+.docx-content h1 {
+  @apply text-2xl font-bold mb-4 text-gray-900;
+}
+
+.docx-content h2 {
+  @apply text-xl font-bold mb-3 text-gray-900;
+}
+
+.docx-content h3 {
+  @apply text-lg font-bold mb-2 text-gray-900;
+}
+
+.docx-content p {
+  @apply mb-4;
+}
+
+.docx-content ul, .docx-content ol {
+  @apply ml-5 mb-4;
+}
+
+.docx-content ul {
+  @apply list-disc;
+}
+
+.docx-content ol {
+  @apply list-decimal;
+}
+
+.docx-content table {
+  @apply border-collapse border border-gray-300 mb-4 w-full;
+}
+
+.docx-content th {
+  @apply border border-gray-300 p-2 bg-gray-100 font-semibold;
+}
+
+.docx-content td {
+  @apply border border-gray-300 p-2;
+}
+
+/* Custom animation for loading states */
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+.animate-pulse {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
